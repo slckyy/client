@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600">
+  <defs>
+    <radialGradient id="ambient"><stop stop-color="#367d91" stop-opacity=".66"/><stop offset=".46" stop-color="#194657" stop-opacity=".5"/><stop offset="1" stop-color="#09171e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="cloud"><stop stop-color="#c2f6fc" stop-opacity=".51"/><stop offset=".26" stop-color="#75c9da" stop-opacity=".34"/><stop offset=".7" stop-color="#387b91" stop-opacity=".2"/><stop offset="1" stop-color="#163c4a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="shade"><stop stop-color="#06151c" stop-opacity=".95"/><stop offset="1" stop-color="#06151c" stop-opacity="0"/></radialGradient>
+    <filter id="mist" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="30"/></filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="1600" height="1600" fill="#09171e"/>
+  <ellipse cx="1110" cy="230" rx="1000" ry="800" fill="url(#ambient)"/>
+  <g filter="url(#mist)">
+    <ellipse cx="1220" cy="85" rx="425" ry="210" fill="url(#cloud)" transform="rotate(-24 1220 85)"/>
+    <ellipse cx="1295" cy="315" rx="470" ry="210" fill="url(#cloud)" transform="rotate(-24 1295 315)"/>
+    <ellipse cx="940" cy="345" rx="290" ry="160" fill="url(#cloud)" transform="rotate(-27 940 345)"/>
+    <ellipse cx="1510" cy="550" rx="375" ry="265" fill="url(#cloud)"/>
+    <ellipse cx="1010" cy="80" rx="280" ry="200" fill="url(#shade)"/>
+    <ellipse cx="1260" cy="390" rx="300" ry="185" fill="url(#shade)" transform="rotate(-24 1260 390)"/>
+    <ellipse cx="800" cy="610" rx="850" ry="220" fill="url(#shade)"/>
+  </g>
+  <path d="M815 177c168-115 321-63 448-121 114-52 173-83 337-65" fill="none" stroke="#76d8ed" stroke-opacity=".09" stroke-width="42" filter="url(#soft)"/>
+</svg>
